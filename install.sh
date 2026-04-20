@@ -338,6 +338,7 @@ under_maintenance() {
 
 reserved="
     scnr
+    velox-scan
 "
 cwd="$(basename `pwd`)"
 
