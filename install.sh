@@ -376,7 +376,7 @@ mkdir -p $HOME/.scnr/pro/config/
 if ! [ -f $scnr_license_file ]; then
     echo
     echo "Velox Scan activation"
-    echo "(If you don't have a license key, get one from https://ecsypno.com -- free Community and Trial editions are available too.)"
+    echo "(If you don't have a license key, get one from https://ecsypno.com -- a free Trial edition is available too.)"
     key=""
     read -p "License key: " key
     $scnr_dir/bin/scnr_activate $key
@@ -448,7 +448,7 @@ if [[ $scnr_edition == "trial" || $scnr_edition == "pro" || $scnr_edition == "en
   echo "* To use Velox Scan Pro you can run: $scnr_dir/bin/scnr_pro"
 
   if [[ "$1" != "docker" ]]; then
-    echo "  * For a better experience please setup PostreSQL: https://github.com/scnr/installer#postgresql"
+    echo "  * For a better experience please setup PostreSQL: https://github.com/ecsypno/velox-scan/installer#postgresql"
   fi
 fi
 
