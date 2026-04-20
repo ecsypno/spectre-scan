@@ -6,7 +6,7 @@ RUN useradd -m -u 1234 -g velox-scan-group velox-scan
 
 USER velox-scan
  
-WORKDIR /home/velox-scan
+WORKDIR /home/velox-scan-dir
 
 RUN mkdir .scnr
 RUN echo '#!/usr/bin/env bash' > ./setup.sh
