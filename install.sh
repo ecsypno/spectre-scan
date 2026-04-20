@@ -352,7 +352,7 @@ done
 
 print_eula
 
-latest_version=`curl -sL https://api.github.com/repos/ecsypno/velox-scan/releases/latest | grep -oP '(?<="tag_name": ")[^"]+'`
+latest_version=`curl -sL https://api.github.com/repos/ecsypno/velox-scan/releases/latest | grep -oP '(?<="tag_name": ")[^"]+' | tr -d "\r\n"`
 scnr_url="https://github.com/ecsypno/velox-scan/releases/download/$latest_version/velox-scan-v$latest_version-$(operating_system)-$(architecture).tar.gz"
 scnr_dir="./velox-scan-v$latest_version"
 scnr_package="./velox-scan-v$latest_version.tar.gz"
