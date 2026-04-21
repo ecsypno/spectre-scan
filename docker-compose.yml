@@ -4,7 +4,7 @@ services:
     build:
       dockerfile: Dockerfile
     image: ecsypno/velox-scan
-    working_dir: /home/velox-scan
+    working_dir: /home/velox
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     ports:
