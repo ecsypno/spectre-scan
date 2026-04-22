@@ -94,7 +94,7 @@ From the Spectre Scan package directory:
 
 ## Manual installation
 
-1. Download the [latest package](https://github.com/ecsypno/Spectre-scan/releases).
+1. Download the [latest package](https://github.com/ecsypno/spectre-scan/releases).
 2. Extract.
 
 You can now run Spectre Scan by using the executables under the `bin/` directory.
