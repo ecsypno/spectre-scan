@@ -1,12 +1,12 @@
 # syntax=docker/dockerfile:1
 FROM ubuntu:22.04
 
-RUN groupadd -g 1234 velox-group
-RUN useradd -m -u 1234 -g velox-group velox
+RUN groupadd -g 1234 spectre-group
+RUN useradd -m -u 1234 -g spectre-group spectre
 
-USER velox
+USER spectre
  
-WORKDIR /home/velox
+WORKDIR /home/spectre
 
 RUN mkdir .scnr
 RUN echo '#!/usr/bin/env bash' > ./setup.sh
@@ -22,4 +22,4 @@ RUN apt-get install -y nano tzdata less curl libgconf-2-4 libatk1.0-0 libatk-bri
 ENV TZ=Etc/UTC
 RUN ln -fs /usr/share/zoneinfo/$TZ /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
 
-USER velox
+USER spectre

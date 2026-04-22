@@ -1,8 +1,8 @@
-name: velox-scan
+name: spectre-scan
 services:
   app:
-    image: ecsypno/velox-scan
-    working_dir: /home/velox
+    image: ecsypno/spectre-scan
+    working_dir: /home/spectre
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     ports:
