@@ -52,7 +52,7 @@ To install run the following command in a terminal of your choice:
 bash -c "$(curl -sSL https://get.ecsypno.com/scnr)"
 ```
 
-You can now run Spectre Scan by using the executables under the `Spectre-scan-v*/bin` directory.
+You can now run Spectre Scan by using the executables under the `spectre-scan-v*/bin` directory.
 
 1. For a CLI scan you can run `bin/scnr URL`.
 2. You can use Spectre Scan Pro by running `bin/scnr_pro`
