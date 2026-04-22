@@ -13,8 +13,7 @@ Prerequisites:
 * [Docker Compose](https://docs.docker.com/compose/)
 
 ```bash
-git clone https://github.com/ecsypno/velox-scan.git velox-scan
-cd velox-scan
+wget https://raw.githubusercontent.com/ecsypno/velox-scan/refs/heads/main/docker-compose.yml
 
 docker compose pull
 docker compose up -d # Start the services.
