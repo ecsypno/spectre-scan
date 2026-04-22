@@ -22,4 +22,6 @@ RUN apt-get install -y nano tzdata less curl libgconf-2-4 libatk1.0-0 libatk-bri
 ENV TZ=Etc/UTC
 RUN ln -fs /usr/share/zoneinfo/$TZ /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
 
+RUN chmod 644 /etc/resolv.conf /etc/hosts || true
+
 USER spectre
