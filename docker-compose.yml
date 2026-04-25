@@ -19,6 +19,8 @@ services:
       POSTGRES_DB: scnr_pro_production
       POSTGRES_USER: scnr-pro
       POSTGRES_PASSWORD: secret
+    volumes:
+      - ./db:/var/lib/postgresql
     healthcheck:
       test: [ "CMD", "pg_isready", "-q", "-d", "scnr_pro_production", "-U", "scnr-pro" ]
       interval: 1s
