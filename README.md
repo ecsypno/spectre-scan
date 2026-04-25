@@ -13,6 +13,7 @@ Prerequisites:
 * [Docker Compose](https://docs.docker.com/compose/)
 
 ```bash
+mkdir spectre-scan && cd spectre-scan
 wget https://raw.githubusercontent.com/ecsypno/spectre-scan/refs/heads/main/docker-compose.yml
 
 docker compose pull
