@@ -334,7 +334,7 @@ under_maintenance() {
     exit
 }
 
-under_maintenance
+#under_maintenance
 
 reserved="
     scnr
