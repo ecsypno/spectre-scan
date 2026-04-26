@@ -169,6 +169,6 @@ sudo apt-get install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.
 
 ## License
 
-Copyright 2026 [Ecsypno Single Member P.C.](https://ecsypno.com/).
+Copyright 2026 [Ecsypno](https://ecsypno.com/).
 
 All rights reserved.
