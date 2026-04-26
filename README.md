@@ -7,6 +7,11 @@ Installation instructions for [Spectre Scan](https://ecsypno.com/pages/codename-
 * [Manual installation](#manual-installation) -- for Linux.
 * [Dependencies for headless environments or WSL](#dependencies-for-headless-environments-or-wsl)
 
+**Enterprise customers requiring the client utilities to manage the [Scheduler](https://documentation.ecsypno.com/scnr/deployment/distributed/scheduler.html)
+or [Agent](https://documentation.ecsypno.com/scnr/deployment/distributed/agent.html) can simply download the
+[matching release](https://github.com/ecsypno/spectre-scan/releases) and use those executables.
+There is no need for special installation instructions nor a license key.**
+
 ## Docker installation
 
 Prerequisites:
@@ -164,6 +169,6 @@ sudo apt-get install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.
 
 ## License
 
-Copyright 2023 [Ecsypno Single Member P.C.](https://ecsypno.com/).
+Copyright 2026 [Ecsypno Single Member P.C.](https://ecsypno.com/).
 
 All rights reserved.
