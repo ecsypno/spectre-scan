@@ -119,6 +119,18 @@ If you'd like to use the Spectre Scan WebUI, its database will need to be prepar
 Out of the box, the WebUI comes configured with [SQLite](https://sqlite.org/index.html), however,
 for better results and performance please switch to [PostgreSQL](https://www.postgresql.org/).
 
+#### Setup
+
+If this is a fresh installation, you can setup a DB with:
+
+    ./bin/scnr_pro_task db:create db:migrate db:seed
+
+#### Update
+
+If you'd like to update an existing installation you can do it with:
+
+    ./bin/scnr_pro_task db:migrate
+
 #### PostgreSQL
 
 ##### Configuration
@@ -146,18 +158,6 @@ cp .system/scnr-ui-pro/config/database.postgres.yml .system/scnr-ui-pro/config/d
 ```
 
 Now edit `.system/scnr-ui-pro/config/database.yml` to change the password from `secret`.
-
-#### Setup
-
-If this is a fresh installation, you can setup a DB with:
-
-    ./bin/scnr_pro_task db:create db:migrate db:seed
-
-#### Update
-
-If you'd like to update an existing installation you can do it with:
-
-    ./bin/scnr_pro_task db:migrate
 
 ## Dependencies for headless environments or WSL
 
