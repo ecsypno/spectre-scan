@@ -19,7 +19,7 @@ Prerequisites:
 
 ```bash
 mkdir spectre-scan && cd spectre-scan
-wget https://raw.githubusercontent.com/ecsypno/spectre-scan/refs/heads/main/docker-compose.yml
+curl -sSL https://compose.spectre-scan.sh > docker-compose.yml
 
 docker compose pull
 docker compose up -d # Start the services.
@@ -55,7 +55,7 @@ data.
 To install run the following command in a terminal of your choice:
 
 ```bash
-bash -c "$(curl -sSL https://get.ecsypno.com/scnr)"
+bash -c "$(curl -sSL https://spectre-scan.sh)"
 ```
 
 You can now run Spectre Scan by using the executables under the `spectre-scan-v*/bin` directory.
