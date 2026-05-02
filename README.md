@@ -99,7 +99,7 @@ Now edit `~/.scnr/pro/config/database.yml` to change the password from `secret`.
 
 From the Spectre Scan package directory:
 
-    bin/scnr_pro_task db:create db:migrate db:seed
+    bin/scnr_pro_task db:setup
 
 ## Manual installation
 
@@ -126,7 +126,7 @@ for better results and performance please switch to [PostgreSQL](https://www.pos
 
 If this is a fresh installation, you can setup a DB with:
 
-    ./bin/scnr_pro_task db:create db:schema:load db:seed
+    ./bin/scnr_pro_task db:setup
 
 #### Update
 

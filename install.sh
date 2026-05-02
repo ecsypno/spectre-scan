@@ -400,7 +400,7 @@ if [[ "$1" == "docker" ]]; then
   rm -f $scnr_dir/.system/scnr-ui-pro/config/database.yml
   ln -s $HOME/.scnr/pro/config/database.yml $scnr_dir/.system/scnr-ui-pro/config/database.yml
 
-  scnr_pro_user=`$scnr_dir/bin/scnr_pro_script 'puts begin; User.count; rescue =>e; 0; end' 2>> /dev/null`
+  scnr_pro_user=`$scnr_dir/bin/spectre_pro_script 'puts begin; User.count; rescue =>e; 0; end' 2>> /dev/null`
   if [[ "$scnr_pro_user" == "1" ]]; then
       update=true
   else
@@ -422,16 +422,16 @@ else
 
 fi
 
-scnr_edition=`$scnr_dir/bin/scnr_edition`
+scnr_edition=`$scnr_dir/bin/spectre_edition`
 
 if [[ $scnr_edition == "dev" || $scnr_edition == "trial" || $scnr_edition == "pro" || $scnr_edition == "enterprise" ]]; then
     if [ "$update" = true ]; then
         echo -n "   * Updating the DB..."
-        $scnr_dir/bin/scnr_pro_task db:migrate 2>> $log 1>> $log
+        $scnr_dir/bin/spectre_pro_task db:migrate 2>> $log 1>> $log
         handle_failure
     else
         echo -n "   * Setting up the DB..."
-        $scnr_dir/bin/scnr_pro_task db:create db:schema:load db:seed 2>> $log 1>> $log
+        $scnr_dir/bin/spectre_pro_task db:setup 2>> $log 1>> $log
         handle_failure
     fi
     echo "done."
@@ -443,10 +443,10 @@ echo -n "Spectre Scan installed at:   "
 echo $scnr_dir
 echo "Installation log at: $log"
 echo
-echo "* For a CLI scan you can run: $scnr_dir/bin/scnr URL"
+echo "* For a CLI scan you can run: $scnr_dir/bin/spectre URL"
 
 if [[ $scnr_edition == "trial" || $scnr_edition == "pro" || $scnr_edition == "enterprise" ]]; then
-  echo "* To use Spectre Scan Pro you can run: $scnr_dir/bin/scnr_pro"
+  echo "* To use Spectre Scan Pro you can run: $scnr_dir/bin/spectre_pro"
 
   if [[ "$1" != "docker" ]]; then
     echo "  * For a better experience please setup PostreSQL: https://github.com/ecsypno/spectre-scan/installer#postgresql"
