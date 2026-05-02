@@ -3,7 +3,10 @@
 Installation instructions for [Spectre Scan](https://ecsypno.com/pages/codename-scnr):
 
 * [Docker installation](#docker-installation) -- for Mac OSX, Linux and MS Windows. _(recommended)_
+   * [Updating](#updating)
+   * [Caution!](#caution)
 * [Automated installation](#automated-installation) -- for Linux.
+  * [PostgreSQL](#postgresql)
 * [Manual installation](#manual-installation) -- for Linux.
 * [Dependencies for headless environments or WSL](#dependencies-for-headless-environments-or-wsl)
 
@@ -123,7 +126,7 @@ for better results and performance please switch to [PostgreSQL](https://www.pos
 
 If this is a fresh installation, you can setup a DB with:
 
-    ./bin/scnr_pro_task db:create db:migrate db:seed
+    ./bin/scnr_pro_task db:create db:schema:load db:seed
 
 #### Update
 
