@@ -104,6 +104,13 @@ behind proxies, with separate disks, or in air-gapped environments.
 | `SPECTRE_ENGINE_LOG_DIR` | `$SPECTRE_HOME/logs/engine` | Engine-side run logs. |
 | `SPECTRE_PRO_LOG_DIR` | `$SPECTRE_HOME/logs/pro` | Spectre Scan Pro (Rails) + bundled PostgreSQL logs. |
 
+### Engine output
+
+| Variable | Default | What it does |
+|---|---|---|
+| `SPECTRE_ENGINE_REPORTS_DIR` | `$SPECTRE_HOME/reports` | Where the engine writes scan reports (`.afr` archives, generated HTML/JSON/XML/text exports). Move to a larger volume if you keep a long history. |
+| `SPECTRE_ENGINE_SNAPSHOTS_DIR` | `$SPECTRE_HOME/snapshots` | Suspended-scan session snapshots used by `resume`. Can grow large for long-running scans — point at a faster / bigger disk if needed. |
+
 ### Spectre Scan Pro database (embedded PostgreSQL)
 
 | Variable | Default | What it does |
