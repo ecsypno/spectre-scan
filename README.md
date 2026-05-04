@@ -111,14 +111,12 @@ behind proxies, with separate disks, or in air-gapped environments.
 | `SPECTRE_PRO_DB_DIR` | `$SPECTRE_HOME/pro/db` | PostgreSQL cluster data dir (`initdb -D`). Move this to a faster / larger volume for big scans. |
 | `SPECTRE_PRO_DB_SOCKET_DIR` | `$SPECTRE_HOME/pro/run` | Unix socket dir Pro connects on. |
 | `SPECTRE_PRO_DB_NAME` | `spectre_pro` | Database name created on first start. |
-| `SPECTRE_PRO_PG_PASSWD` | *(none)* | Password for the Pro DB user. The Rails app reads this on startup; required when running `assets:precompile` or any production boot. |
 
 ### Engine
 
 | Variable | Default | What it does |
 |---|---|---|
 | `SPECTRE_CHECK_SERVER` | `http://checks.ecsypno.com` | URL of the SSRF check server. Override it for air-gapped installs running their own `bin/spectre_check_server` — see the [air-gapped guide](https://documentation.ecsypno.com/scnr/how-to/run-air-gapped.html). |
-| `SPECTRE_ENGINE_PROFILE` | *(unset)* | Set to anything truthy to enable the engine's profiling output (verbose, dev/debug only). |
 
 ### Networking
 
