@@ -377,7 +377,7 @@ scnr_url="https://github.com/ecsypno/spectre-scan/releases/download/$latest_vers
 scnr_dir="./spectre-scan-v$latest_version"
 scnr_package="./$scnr_archive"
 scnr_home="${SPECTRE_HOME:-$HOME/.spectre}"
-# Encrypted license data file; matches Ecsypno::License::LICENSE_DATA_FILENAME.
+# Encrypted license data file;.
 # (The plaintext key sits beside it as license.key — survives crypto rotations.)
 scnr_license_file="$scnr_home/license"
 
