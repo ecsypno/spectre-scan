@@ -2,11 +2,11 @@
 
 Installation instructions for [Spectre Scan](https://ecsypno.com/pages/codename-scnr):
 
-* [Docker installation](#docker-installation)
+* [Docker installation](#docker-installation) -- All platforms.
    * [Updating](#updating)
    * [Caution!](#caution)
-* [Automated installation](#automated-installation) -- for Linux.
-* [Manual installation](#manual-installation) -- for Linux.
+* [Automated installation](#automated-installation) -- for Linux x84 64bit.
+* [Manual installation](#manual-installation) -- for Linux x84 64bit.
 * [Dependencies for headless environments or WSL](#dependencies-for-headless-environments-or-wsl)
 * [Environment variables](#environment-variables) -- for ops, air-gapped, multi-volume layouts.
 
